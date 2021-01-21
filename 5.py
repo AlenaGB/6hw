@@ -5,14 +5,12 @@ class Stationary:
     def draw(self):
         return f'Запуск отрисовки {self.title}'
 
-
 class Pen(Stationary):
     def __init__(self, title):
         super().__init__(title)
 
     def draw(self):
         return f'у меня в руках {self.title}'
-
 
 class Pencil(Stationary):
     def __init__(self, title):
@@ -21,14 +19,12 @@ class Pencil(Stationary):
     def draw(self):
         return f'у меня в руках {self.title}'
 
-
 class Handle(Stationary):
     def __init__(self, title):
         super().__init__(title)
 
     def draw(self):
         return f' у меня в руках {self.title}'
-
 
 pen = Pen('Ручка')
 pencil = Pencil('Карандаш')

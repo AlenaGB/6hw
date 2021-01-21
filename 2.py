@@ -13,4 +13,5 @@ class count(Road):
         self._depth = _depth
 
 data = count(20, 5000, 25, 5)
+
 print(data.mass(), ' тонн')
