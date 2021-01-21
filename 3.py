@@ -6,7 +6,6 @@ class Worker:
         self.position = position
         self._income = {"wage": wage, "bonus": bonus}
 
-
 class Position(Worker):
 
     def __init__(self, name, surname, position, wage, bonus):
@@ -19,8 +18,7 @@ class Position(Worker):
         return self._income.get('wage') + self._income.get('bonus')
         # return f'{sum(self._income.values())}'
 
-
-a = Position('Peter', 'The Great', 'Beekeeper', 100000, 25000)
+a = Position('Alena', 'Popova', 'Student', 15000, 5000)
 print(a.get_full_name())
 print(a.position)
 print(a.get_total_income())

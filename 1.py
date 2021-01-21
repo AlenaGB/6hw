@@ -1,45 +1,21 @@
+import time
 class TrafficLight:
     __color = ['Красный', 'Желтый', 'Зеленый']
 
     def running(self):
         i = 0
         while i < 3:
-            print(f'Светофор переключается \n '
-                  f'{TrafficLight.__color[i]}')
+            print(TrafficLight.__color[i], end='')
+            print('\r', end='')
             if i == 0:
-                sleep(7)
+                time.sleep(7)
             elif i == 1:
-                sleep(5)
+                time.sleep(2)
             elif i == 2:
-                sleep(3)
+                time.sleep(5)
             i += 1
-
 
 TrafficLight = TrafficLight()
 TrafficLight.running()
 
-
-
-
-# from time import sleep
-#
-# class TrafficLight:
-#
-#     color = ['Red', 'Yellow', 'Green']
-#
-#     def running(self, color):
-#         self.color = color
-#         for i in range(len(color)):
-#             print(color[i], end='')
-#             print('\r', end='')
-#             sleep(7)
-#         print()
-
-TrafficLight.running(color)
-# light = TrafficLights('yellow')
-# print(light.color, '\r', end='')
-# sleep(5)
-#
-# light = TrafficLights('green')
-# print(light.color, '\r', end='')
-# sleep(2)
+# замена строки получилась криво, не разобралась как сделать красиво

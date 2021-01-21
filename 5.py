@@ -11,7 +11,7 @@ class Pen(Stationary):
         super().__init__(title)
 
     def draw(self):
-        return f'Вы взяли {self.title}. Запуск отрисовки ручкой'
+        return f'у меня в руках {self.title}'
 
 
 class Pencil(Stationary):
@@ -19,7 +19,7 @@ class Pencil(Stationary):
         super().__init__(title)
 
     def draw(self):
-        return f'Вы взяли {self.title}. Запуск отрисовки карандашом'
+        return f'у меня в руках {self.title}'
 
 
 class Handle(Stationary):
@@ -27,7 +27,7 @@ class Handle(Stationary):
         super().__init__(title)
 
     def draw(self):
-        return f'Вы взяли {self.title}. Запуск отрисовки маркером'
+        return f' у меня в руках {self.title}'
 
 
 pen = Pen('Ручка')
