@@ -14,7 +14,6 @@ class TrafficLight:
             elif i == 2:
                 time.sleep(5)
             i += 1
-
 TrafficLight = TrafficLight()
 TrafficLight.running()
 
